@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Bands</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Search for a band or song..." onkeyup="searchBand()">
+        
+        <button id="search-button" onclick="sendEmail()">
+            <img src="./img_brand/email.png" alt="Email Logo" class="email-logo">
+            อยากได้เพลงเพิ่มส่งเมลมา
+        </button>
+
+        <div>
+            <a href="update.html"><img style="width: 50px;margin-left:2%;" src="./img_brand/update.png" alt="Update Logo"></a>
+        </div>
+    </div>
+
+
+    <div class="bands-container" id="bands-container">
+        <div class="band-card">
+            <a href="webS/nirvana/come-as-you-are-nirvana.html">
+                <img src="img_brand/Nirvana.jpg" alt="Nirvana">
+                <button>Nirvana-Come As you Are</button>
+            </a>
+        </div>
+        <div class="band-card">
+            <a href="webS/nirvana/smell-like-teen-spirit.html">
+                <img src="img_brand/Nirvana.jpg" alt="Nirvana">
+                <button>Nirvana-Smell Like Teen Spirit</button>
+            </a>
+        </div>
+        <div class="band-card">
+            <a href="webS/nirvana/someting-in-the-way.html">
+                <img src="img_brand/Nirvana.jpg" alt="Nirvana">
+                <button>Nirvana-Someting In The Way</button>
+            </a>
+        </div>
+        <div class="band-card">
+            <a href="webS/nirvana/heart-shape-box.html">
+                <img src="img_brand/Nirvana.jpg" alt="Nirvana">
+                <button>Nirvana-Heart Shape Box</button>
+            </a>
+        </div>
+        <div class="band-card">
+            <a href="webS/nirvana/lithium.html">
+                <img src="img_brand/Nirvana.jpg" alt="Nirvana">
+                <button>Nirvana-Lithium</button>
+            </a>
+        </div>
+        <div class="band-card">
+            <a href="webS/nirvana/rape-me.html">
+                <img src="img_brand/Nirvana.jpg" alt="Nirvana">
+                <button>Nirvana-Rape Me</button>
+            </a>
+        </div>
+        <div class="band-card">
+            <a href="webS/nirvana/poly.html">
+                <img src="img_brand/Nirvana.jpg" alt="Nirvana">
+                <button>Nirvana-Poly</button>
+            </a>
+        </div>
+        <div class="band-card">
+            <a href="webS/nirvana/where-did-you-sleep-last-night.html">
+                <img src="img_brand/Nirvana.jpg" alt="Nirvana">
+                <button>Nirvana-Where Did You Sleep Last Night</button>
+            </a>
+        </div>
+        <div class="band-card">
+            <a href="webS/nirvana/dump.html">
+                <img src="img_brand/Nirvana.jpg" alt="Nirvana">
+                <button>Nirvana-Dumb</button>
+            </a>
+        </div>
+        <div class="band-card">
+            <a href="webS/nirvana/lake-of-fire.html">
+                <img src="img_brand/Nirvana.jpg" alt="Nirvana">
+                <button>Nirvana-Lake Of Fire</button>
+            </a>
+        </div>
+        <div class="band-card">
+            <a href="webS/nirvana/jesus-dont-want-me-for-a-sunbean.html">
+                <img src="img_brand/Nirvana.jpg" alt="Nirvana">
+                <button>Nirvana-Jesus Don't Want Me For A Sunbean</button>
+            </a>
+        </div>
+        <div class="band-card">
+            <a href="webS/radiohead/creep-radiohead.html">
+                <img src="img_brand/Radiohead.png" alt="Radiohead">
+                <button>Radiohead-Creep</button>
+            </a>
+        </div>
+        <div class="band-card">
+            <a href="webS/radiohead/no-surprises.html">
+                <img src="img_brand/Radiohead.png" alt="Radiohead">
+                <button>Radiohead-No Surprises</button>
+            </a>
+        </div>
+        <div class="band-card">
+            <a href="webS/radiohead/fake-plastic-trees.html">
+                <img src="img_brand/Radiohead.png" alt="Radiohead">
+                <button>Radiohead-Fake Plastic Trees</button>
+            </a>
+        </div>
+        <div class="band-card">
+            <a href="webS/radiohead/karma-police.html">
+                <img src="img_brand/Radiohead.png" alt="Radiohead">
+                <button>Radiohead-Karma Police</button>
+            </a>
+        </div>
+        <div class="band-card">
+            <a href="webS/radiohead/high-and-dry.html">
+                <img src="img_brand/Radiohead.png" alt="Radiohead">
+                <button>Radiohead-High And Dry</button>
+            </a>
+        </div>
+        <div class="band-card">
+            <a href="webS/oasis/stand-by-me-oasis.html">
+                <img src="img_brand/Oasis.png" alt="Oasis">
+                <button>Oasis-Stand By Me</button>
+            </a>
+        </div>
+        <div class="band-card">
+            <a href="webS/oasis/stop-crying-your-heart-out.html">
+                <img src="img_brand/Oasis.png" alt="Oasis">
+                <button>Oasis-Stop Crying Your Heart Out</button>
+            </a>
+        </div>
+        <div class="band-card">
+            <a href="webS/oasis/wonderwall.html">
+                <img src="img_brand/Oasis.png" alt="Oasis">
+                <button>Oasis-Wonderwall</button>
+            </a>
+        </div>
+        <div class="band-card">
+            <a href="webS/oasis/dont-look-back-in-angel.html">
+                <img src="img_brand/Oasis.png" alt="Oasis">
+                <button>Oasis-Don't Look Back Angel</button>
+            </a>
+        </div>
+        <div class="band-card">
+            <a href="webS/oasis/dont-go-away.html">
+                <img src="img_brand/Oasis.png" alt="Oasis">
+                <button>Oasis-Don't Go Away</button>
+            </a>
+        </div>
+        <div class="band-card">
+            <a href="webS/alice-in-chains/nutshell-alice-in-chains.html">
+                <img src="img_brand/Alice-in-chains.jpg" alt="Alice In Chains">
+                <button>Alice In Chains-Nutshell</button>
+            </a>
+        </div>
+        <div class="band-card">
+            <a href="webS/the-animal/the-house-of-rising-sun.html">
+                <img src="img_brand/The-Animal.jpg" alt="The Animals">
+                <button>The Animals-The House Of Rising Sun</button>
+            </a>
+        </div>
+        <div class="band-card">
+            <a href="webS/gun-n-rose/dont-cry-gun-n-rose.html">
+                <img src="img_brand/Gun n Rose.jpg" alt="Guns N' Roses">
+                <button>Guns N' Roses-Don't Cry</button>
+            </a>
+        </div>
+        <div class="band-card">
+            <a href="webS/loso/แม้ว่า-โลโซ.html">
+                <img src="img_brand/Loso.jpg" alt="โลโซ">
+                <button>โลโซ-แม้ว่า</button>
+            </a>
+        </div>
+        <div class="band-card">
+            <a href="webS/tiger/18ฝน-เสือ.html ">
+                <img src="img_brand/t.jpg" alt="ธนพล อินทฤทธิ์">
+                <button>ธนพล อินทฤทธิ์-18ฝน</button>
+            </a>
+        </div>
+    </div>
+    <script>
+        function searchBand() {
+            const query = document.getElementById('search-input').value.toLowerCase();
+            const bandCards = document.querySelectorAll('.band-card');
+
+            bandCards.forEach(card => {
+                const bandName = card.querySelector('button').textContent.toLowerCase();
+                if (bandName.includes(query)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+        function sendEmail() {
+            const email = 'vorapat061@gmail.com';
+            const subject = 'Band or Song Search Query';
+            const body = document.getElementById('search-input').value;
+            window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        }
+    </script>
+</body>
+</html>

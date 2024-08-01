@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    width: 80%;
+    max-width: 800px;
+    flex-wrap: wrap; /* เพิ่ม flex-wrap เพื่อให้ย้ายไปแถวใหม่เมื่อหน้าจอเล็กลง */
+}
+
+#search-input {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#search-button {
+    padding: 10px;
+    margin-left: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+}
+
+#search-button img.email-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.search-bar div {
+    margin-left: 10px;
+}
+
+.search-bar div img {
+    width: 50px;
+}
+
+.bands-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.band-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px;
+    width: calc(33.333% - 20px);
+    max-width: 300px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.band-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ccc;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.band-card button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.band-card button:hover {
+    background-color: #ddd;
+}
+
+.band-card:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 900px) {
+    .band-card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 600px) {
+    .band-card {
+        width: calc(100% - 20px);
+    }
+}
+
+@media (max-width: 600px) {
+    .search-bar {
+        justify-content: center; /* จัดให้อยู่ตรงกลาง */
+    }
+
+    #search-button, .search-bar div {
+        width: 100%;
+        margin-top: 10px; /* เพิ่มระยะห่างระหว่างแถว */
+    }
+
+    #search-button {
+        margin-left: 0;
+    }
+
+    .search-bar div {
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+}
